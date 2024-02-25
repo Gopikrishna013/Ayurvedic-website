@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayurvedic site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="https://t3.ftcdn.net/jpg/03/30/10/30/360_F_330103064_oq2FxODH68J1iJB9sYP62XIXWXiM4q1j.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-success" style="position: sticky; top: 0px; width: 100%;" >
+        <div class="container-fluid" >
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav fs-5 mx-5" style="font-weight: 400px;">
+              <li class="nav-item">
+                <a class="nav-link active px-3 text-light" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active px-3 text-light" aria-current="page" href="#">Product</a>
+
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active px-3 text-light" aria-current="page" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active px-3 text-light" aria-current="page" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active px-3 text-light" aria-current="page" href="#">Contact</a>
+              </li>
+              
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-4 mt-2 " >
+               
+            <i class="fa fa fa-heart-o" style="font-size: 22px; padding: 25px;" ></i>
+            <i class="fa  fa fa-user-o" style="font-size: 22px; padding: 25px;"></i>
+            <i class="fa fa  fa-briefcase" style="font-size: 22px; padding: 25px;"></i>
+        </div>
+        </div>
+      </nav>
+    </div>
+
+<div class="container-fluid">
+    <img src="/uploads/bannercontact.jpg" class="img-fluid" width="100%" alt="image">
+</div>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/contact.css">
+    <script>
+
+        function loginvalidation() {
+
+            var myName = document.myForm.myName.value;
+            var myEmail = document.myForm.myEmail.value.trim();
+            var  mysubj = document.myForm.mysubj.value;
+            var  myMsg  = document.myForm.myMsg.value;
+            
+
+
+            if (myName == null || myName == "" ||myEmail == null || myEmail == "" || !myEmail.endsWith("@gmail.com" ||mysubj == null || mysubj == "" || myMsg == null || myMsg == "") ) {
+                document.getElementById("warn").style.display="block";
+                document.getElementById("Elem").style.display="block";
+                document.getElementById("Elem2").style.display="block";
+                document.getElementById("Elem3").style.display="block";
+                return false;
+            }  else{
+                document.getElementById("warn").style.display="none";
+                document.getElementById("Elem").style.display="none";
+                document.getElementById("Elem2").style.display="none";
+                document.getElementById("Elem3").style.display="none";
+
+            }
+
+
+            // if (myEmail == null || myEmail == "" || !myEmail.endsWith("@gmail.com") ) {
+            //     document.getElementById("Elem").style.display="block";
+            //     return false;
+            // }  else{
+            //     document.getElementById("Elem").style.display="none";
+            // }
+
+
+        
+            // if ( mysubj == null || mysubj == "") {
+            //     document.getElementById("Elem2").style.display="block";
+            //     return false;
+            // }  else{
+            //     document.getElementById("Elem2").style.display="none";
+
+            // }
+
+
+            // if ( myMsg == null || myMsg == "") {
+            //     document.getElementById("Elem3").style.display="block";
+            //     return false;
+            // }  else{
+            //     document.getElementById("Elem3").style.display="none";
+
+            // }
+            
+            
+
+        }
+
+    
+
+
+
+        
+    </script>
+
+
+
+</head>
+
+<body>
+    <!-- <div class="container-fluid bg-primary " style="background-image: url(./lap_with_emp.webp);height:140px;">
+       <div class="row" style="background-color: #2020bf9b; height: 140px;">
+            <div class="col-lg-12">
+                <h2 class="text-center pt-5 text-white fs-1">CONTACT US </h2>
+            </div>
+        </div> 
+    </div> -->
+    <!-- <p class="text-primary text-center " style="padding-top: 130px;">APPROACH OUR EXPERTS</p> -->
+    <h1 class="text-center mt-5 ">GET IN TOUCH WITH US</h1>
+    <div class="container">
+        <div class="row">
+            <div class=" name col-lg-6  col-md-12 col-sm-12  ">
+                <h1 style="color: green;">ADDRESS</h1>
+                <p class="mx:5">45-8,Peek Avenue  Hitech City, <br> Hyderabad - 500033</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.19014805998!2d78.37861227377164!3d17.450610800983377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93ded9f6f0d7%3A0xa3d91e5d00d50b63!2sCyber%20Towers!5e0!3m2!1sen!2sin!4v1703853301765!5m2!1sen!2sin" width="490" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h5 class="pt-3" style="color: green;">TO CONNECT WITH AN EXPERT,<br>
+                    PLEASE CALL OR EMAIL US:</h5>
+                <P>Email: ayurvedorganic@orderme.co.in<br>
+                    Phone: 9000011122</P>
+
+
+
+            </div>
+
+
+
+
+
+            <div class="col-lg-6">
+                <h5 class="pt-5 my-4" style="color: green;">Write A Massage
+                    </h1>
+
+                    <div class="height-4 pz-3">
+
+
+                        <form name="myForm" action="success.html"
+                            onsubmit="return loginvalidation() ">
+
+                            <input type="text" class="form-control rounded-5 py-3" name="myName" placeholder="Name"  ><br>
+                            <p id="warn" style="color: red;display: none;">Enter name here...</p>
+
+
+
+
+                            <input id="Email"  name="myEmail" type="text" class="form-control rounded-5 py-3" placeholder="Email" ><br>
+                            <p id="Elem" style="color: red;display: none;">Enter ur Email id..</p>
+
+
+
+
+                        <input type="text" class="form-control rounded-5 py-3" name="mysubj" placeholder="Subject" ><br>
+                        <p id="Elem2" style="color: red;display: none;">subject cannot be empty</p>
+
+
+                        <input type="text" class="form-control rounded-5 pb-5 pt-3" name="myMsg" placeholder="Message" >
+                    
+                            <p id="Elem3" style="color: red;display: none;">Enter  ur message.. </p>
+
+
+                            <div>
+                        <button type="submit" class="btn btn-dark mt-3 p-3  px-5 float-end rounded-5"  value="submit"> SUBMIT </a></button>
+                    
+                        </div>
+
+                        </form>
+                    </div>
+            </diV>
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <div class="container">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="container d-flex justify-content-center bg-light" style="width: 35rem; height: 450px;">
+          <div class="card-body"> 
+            <h1 class="card-title mt-3">Registration Form</h1>
+            <form action="LoginSuccess.html" registrationForm onsubmit="return validateForm()">
+              <label for="username" style="margin-top: 30px;">Username:</label>
+              <input type="text" id="username" name="username" required><br> <br>
+          
+              <label for="email" >Email:</label>
+              <input type="email" id="email" name="email" required><br> <br>
+          
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required><br> <br>
+          
+              <label for="confirmPassword">Confirm Password:</label>
+              <input type="password" id="confirmPassword" name="confirmPassword" required><br> <br>
+          
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Register"> &nbsp;&nbsp; &nbsp;
+              <input type="Reset" value="Reset">
+  
+            </form>
+          
+            <script>
+              function validateForm() {
+                const username = document.getElementById('username').value;
+                const email = document.getElementById('email').value;
+                const password = document.getElementById('password').value;
+                const confirmPassword = document.getElementById('confirmPassword').value;
+          
+                // Check if passwords match
+                if (password !== confirmPassword) {
+                  alert("Passwords do not match");
+                  return false;
+                }
+          
+                // Validate other fields (you can add more validation as needed)
+                if (username.length < 4 || username.length > 20) {
+                  alert("Username must be between 4 and 20 characters");
+                  return false;
+                }
+          
+                if (!validateEmail(email)) {
+                  alert("Invalid email format");
+                  return false;
+                }
+          
+                return true;
+              }
+          
+              function validateEmail(email) {
+                // A simple email validation regular expression
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return emailPattern.test(email);
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- footer -->
+    <div class="container-fluid mt-5">
+
+      <div class="row bg-success">
+          <div class="col-lg-8">
+              <div class="row mt-5">
+                  <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-md-center">
+                      <div>
+                          <h5><b>Customer Service</b></h5><br>
+                          <p>Payment Options</p>
+                          <p>Track Order</p>
+                          <p>Encircle Program</p>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12  d-flex justify-content-md-center">
+                      <div>
+                          <h5><b>Contact us</b></h5><br>
+                          <p>+91 9000011122</p>
+                          <p>ayurvedorganic@<br>orderme.co.in</p>
+                          <p>FAQ</p>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-md-center">
+                      <div>
+                          <h5><b>Policy</b></h5><br>
+                          <p>Returns & Exchanges</p>
+                          <p>Cancellation</p>
+                          <p>Shipping</p>
+                          <p>Delivery Information</p>
+                          <p>Brand Protection</p>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-md-center">
+                      <div>
+                          <h5><b>About us</b></h5><br>
+                          <p>Corporate</p>
+                          <p>Careers</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 d-flex justify-content-sm-center">
+              <div class="row mt-5">
+                  <div class="col-md-12">
+                      <h5><b>DOWNLOAD WORLD OF WRIGHT APP</b></h5><br>
+                      <div class="d-flex mt-md-3">
+                          <div class="col-lg-4 mx-md-2">
+                              <a
+                                  href="https://play.google.com/store/apps/details?id=bluebird.infotech.ayushmedi&pcampaignid=web_share"><img
+                                      src="/uploads/play2.jpeg" alt="image"
+                                      style="width: 100px;height: 30px; "></a>
+                          </div>
+                          <div class="col-lg-4 mx-md-2">
+                              <a href="https://apps.apple.com/in/app/ayurvedic-medicine/id1081738551"><img
+                                      src="/uploads/play2.jpeg" alt="image"
+                                      style="width: 100px;height: 30px; "></a>
+                          </div>
+                      </div>
+                      <h5 class="mt-md-3"><b>FOLLOW WITH US</b></h5><br>
+                      <div>
+                          <a
+                              href="https://www.facebook.com/groups/siddha.ayurveda.medicines/?ref=share&mibextid=Ehojnz "><i
+                                  class="fa-brands fa-facebook mx-2" style="color: black; font-size: 35px;"></i></a>
+                          <a href="https://www.instagram.com/ayurvedic.medicines?igsh=MzFodTFnb283NzNu"><i
+                                  class="fa-brands fa-instagram mx-2" style="color: black; font-size: 35px;"></i></a>
+                          <a href="https://youtu.be/N6l-xpWIh98?si=uyVBzhIYD-l0z2Jk"><i
+                                  class="fa-brands fa-youtube mx-2" style="color: black; font-size: 35px;"></i></a>
+                          <a href="https://x.com/ayurvedicmedico?s=20"><i class="fa-brands fa-twitter mx-2"
+                                  style="color: black; font-size: 35px;"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+
+</body>
+</html>
